@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+About Us
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/banner.webp' %});"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">About Us</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">About Us</a></li>
+        </ul>
+        <img src="{% static 'mysite/assets/images/banner-logo.webp' %}" alt="Banner Logo">
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- About Us Start -->
+<section class="gap no-bottom about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="content">
+                    <h2>The Story Of Zion Faith Mission</h2>
+                    <p class="w-85">The vision began in 1989 i Maiduguri between Brother Abel Adeleke and Sister Oluremi
+                        Alabi, as they were planning to become married couple someday in the future. As we know, a noble
+                        purpose inspires sacrifice, stimulate innovation and encourages perseverance. The vision was
+                        kept close to our hearts. We received some theoretical training, we worked with Foursquare
+                        Nigeria to gain requisite experience, we prayed as required, and we consulted many church
+                        leaders for counseling.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="church-about-img">
+                    <img src="{% static 'mysite/assets/images/church-about-img.webp' %}" alt="Church Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gap about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="church-about-img-two">
+                    <img src="{% static 'mysite/assets/images/church-about-img-two.webp' %}" alt="church-about-img-two">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="content services-online mt-5">
+                    <h2>Our Journey Here...</h2>
+                    <p class="w-85">At the fullness of time, Zion began in 2008 at Peace House. Tim Arolayo was the
+                        resident pastor then. Isaiah Akinola was the director of Home Mission and Revival. Olusegun
+                        Ogunniyi was in charge of Prayer Ministry. Florence Olujobi was the Director of Finance. Oladele
+                        Albert was the Director of Mission and Evangelism. Adeshina Afolayan became the Director of
+                        Christian Education. Oluremi Adeleke became the Provost of Zion College of Theology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- About Us End -->
+
+<!-- Pray Start -->
+<section class="gap pray">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/pray.webp' %});"></div>
+    <div class="container">
+        <div class="row">
+            <div class="pray-data text-center">
+                <img src="{% static 'mysite/assets/images/pray-logo.webp' %}" alt="Pray Img">
+                <h2 class="m-auto text-white">“Among those who went to the Temple to worship were people who came saying
+                    “Sir, we would like to see Jesus”</h2>
+                <p class="text-white font-bold">Waqar thomas 12:20</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pray End -->
+
+<!-- Circle Slider Start -->
+<section class="gap no-top circle-slider">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="c-slider">
+                    <div>
+                        <h2 class="font-bold">Testimony</h2>
+                        <p>“ I moved to Quincy last year and was searching for a church home. The people here are always
+                            smiling and friendly. Pastor Taylor is kind and always positive. I've been going to this
+                            church for almost a year now and I look forward to going each Sunday. ”</p>
+                        <ul>
+                            <li><h3 class="font-bold">Lataya Carter</h3></li>
+                            <li class="d-flex font-bold">recommends<span class="theme-clr">blesso Church</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold">Testimony</h2>
+                        <p>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nec magna in
+                            imperdiet. Morbi condimentum, justo nec posuere dictum, velit nisl rhoncus urna, pretium
+                            ultricies neque ante sit amet turpis. Cras malesuada. ”</p>
+                        <ul>
+                            <li><h3 class="font-bold">William</h3></li>
+                            <li class="d-flex font-bold">recommends<span class="theme-clr">blesso Church</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold">Testimony</h2>
+                        <p>“ I moved to Quincy last year and was searching for a church home. The people here are always
+                            smiling and friendly. Pastor Taylor is kind and always positive. I've been going to this
+                            church for almost a year now and I look forward to going each Sunday. ”</p>
+                        <ul>
+                            <li><h3 class="font-bold">Mr. John</h3></li>
+                            <li class="d-flex font-bold">recommends<span class="theme-clr">blesso Church</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold">Testimony</h2>
+                        <p>“ c dictum, ex et porttitor sagittis, lorem turpis pharetra augue, vel maximus enim dui id
+                            dui. Praesent fermentum dapibus elit, gravida elementum sapien accumsan sed. Sed pretium
+                            quis eros fermentum placerat. Donec imperdiet sceler ”</p>
+                        <ul>
+                            <li><h3 class="font-bold">Julee</h3></li>
+                            <li class="d-flex font-bold">recommends<span class="theme-clr">blesso Church</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="nav-c-slider">
+                    <a class="next-slide" href="JavaScript:void(0)" data-slide="1">
+                        <img class="animate__animated animate__fadeIn "
+                             src="{% static 'mysite/assets/images/c-slider-5.webp' %}" alt="img 1">
+                    </a>
+                    <a class="next-slide" href="JavaScript:void(0)" data-slide="2">
+                        <img class="animate__animated animate__fadeIn"
+                             src="{% static 'mysite/assets/images/about-one-img.webp' %}" alt="img 2">
+                    </a>
+                    <a class="next-slide" href="JavaScript:void(0)" data-slide="3">
+                        <img class="animate__animated animate__fadeIn"
+                             src="{% static 'mysite/assets/images/pastor.webp' %}" alt="img 3">
+                    </a>
+                    <a class="next-slide" href="JavaScript:void(0)" data-slide="4">
+                        <img class="animate__animated animate__fadeIn"
+                             src="{% static 'mysite/assets/images/eventthree3.webp' %}" alt="img 4">
+                    </a>
+                    <div class="slider-main-img">
+                        <img src="{% static 'mysite/assets/images/c-slider-5.webp' %}" alt="img 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Circle Slider Start -->
+
+{% endblock content %}
