@@ -1,5 +1,10 @@
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
 from django.views import View
+
+from MySite.models import Student
 
 
 class HomeView(View):
@@ -18,6 +23,13 @@ class AboutView(View):
 
 class ContactView(View):
     template_name = "mysite/contact.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+
+class EventView(View):
+    template_name = "mysite/events.html"
 
     def get(self, request):
         return render(request, self.template_name)
@@ -42,3 +54,18 @@ class RoadmapView(View):
 
     def get(self, request):
         return render(request, self.template_name)
+
+
+def register(request):
+    if request.METHOD == "POST":
+        first_name = request.POST.get("first_name").strip().upper()
+        last_name = request.POST.get("last_name").strip().upper()
+        email = request.POST.get("email").strip().upper()
+
+        if Student.objects.filter(email=email).exists():
+            messages.success(request, "Registration successful")
+        else:
+            Student.objects.create(first_name=first_name, last_name=last_name, email=email)
+            messages.success(request, "Registration successful")
+
+        return HttpResponseRedirect(reverse("MySite:home"))

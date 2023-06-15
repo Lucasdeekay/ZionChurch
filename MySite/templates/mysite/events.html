@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Events
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/banner.webp' %});"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">Events</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">Events</a></li>
+        </ul>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- Events Carousal Start -->
+<section class="gap events-carousal">
+    <div class="container">
+        <div style="margin-bottom: 5px">
+            <h2 style="margin-bottom: 5px">Zion Power Revival</h2>
+            <p>@ Kuguo Assembly under the leadership of Bishop OLadele Albert</p>
+        </div>
+    </div>
+    <div class="">
+        <div class="events-carousal-slider">
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 1.jpg' %}" alt="Event Image 2">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 2.jpg' %}" alt="Event Image 3">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 4.jpg' %}" alt="Event Image 4">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 5.jpg' %}" alt="Event Image 5">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 6.jpg' %}" alt="Event Image 6">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade 7.jpg' %}" alt="Event Image 7">
+                   <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade2 1.jpg' %}" alt="Event Image 8">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/revival/crusade2 2.jpg' %}" alt="Event Image 9">
+                    <div class="event-data">
+                        <p class="text-white">Zion Power Revival @ Kuguo Assembly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Events Carousal End -->
+
+{% endblock content %}

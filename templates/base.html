@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'mysite/assets/css/bootstrap.min.css' %}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{% static 'mysite/assets/images/pastor-icon.webp' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'mysite/assets/images/logo/zion_logo_dark-removebg.png' %}">
 
     <!-- Slick Slider -->
     <link rel="stylesheet" type="text/css" href="{% static 'mysite/assets/css/slick.css' %}">
@@ -47,7 +47,7 @@
     </svg>
     <div class="inner">
         <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
-        <figure><img src="{% static 'mysite/assets/images/icon-white.png' %}" alt="Image"></figure>
+        <figure><img src="{% static 'mysite/assets/images/logo/zion_logo_dark-removebg.png' %}" alt="Image" width="230px"></figure>
         <small>Loading</small></div>
     <!-- end inner -->
 </div>
@@ -79,30 +79,35 @@
             </div>
         </div>
     </div>
-
     <div class="desktop-nav" id="stickyHeader">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <nav>
                         <div class="logo">
-                            <a href="index-2.html">
-                                <img src="{% static 'mysite/assets/images/logo.webp' %}" alt="Logo">
+                            <a href="JavaScript:void(0)">
+                                <img src="{% static 'mysite/assets/images/logo/zion_logo_dark-removebg.png' %}" height="70px" alt="Logo">
                             </a>
                         </div>
-
-                        <div class="nav-bar">
+                        <div class="nav-bar" style="padding-left: 10px; padding-right: 10px">
                             <ul>
                                 <li><a href="{% url 'MySite:home' %}">Home</a></li>
-                                <li><a href="{% url 'MySite:about' %}">About</a></li>
-                                <li><a href="{% url 'MySite:roadmap' %}">Missions</a></li>
-                                <li><a href="{% url 'MySite:project' %}">Projects</a></li>
+                                <li class="menu-item-has-children"><a href="JavaScript:void(0)">About</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="{% url 'MySite:about' %}">About Us</a></li>
+                                        <li><a href="{% url 'MySite:roadmap' %}">Our Missions</a></li>
+                                        <li><a href="{% url 'MySite:project' %}">Our Projects</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'MySite:events' %}">Events</a></li>
                                 <li><a href="{% url 'MySite:gallery' %}">Gallery</a></li>
                                 <li><a href="{% url 'MySite:contact' %}">Contact</a></li>
                             </ul>
                         </div>
                         <div class="donation">
-                            <a href="JavaScript:void(0)" class="theme-btn" data-bs-toggle="modal"
+                            <a href="JavaScript:void(0)" class="theme-btn mx-2" data-bs-toggle="modal"
+                               data-bs-target="#staticBackdropReg">Register Now</a>
+                            <a href="JavaScript:void(0)" class="theme-btn mx-2" data-bs-toggle="modal"
                                data-bs-target="#staticBackdrop">Give Now</a>
                         </div>
                         <div id="nav-icon4">
@@ -116,20 +121,27 @@
         </div>
     </div>
     <div class="mobile-nav" id="mobile-nav">
-        <div class="res-log">
-            <a href="index-2.html">
-                <img src="{% static 'mysite/assets/images/logo.webp' %}" alt="Responsive Logo">
+        <div style="text-align: center">
+            <a href="JavaScript:void(0)">
+                <img src="{% static 'mysite/assets/images/logo/zion_logo_dark-removebg.png' %}" height="200px" alt="Responsive Logo">
             </a>
         </div>
         <ul>
             <li><a href="{% url 'MySite:home' %}">Home</a></li>
-            <li><a href="{% url 'MySite:about' %}">About</a></li>
-            <li><a href="{% url 'MySite:roadmap' %}">Missions</a></li>
-            <li><a href="{% url 'MySite:project' %}">Projects</a></li>
+            <li class="menu-item-has-children"><a href="JavaScript:void(0)">About</a>
+                <ul class="sub-menu">
+                    <li><a href="{% url 'MySite:about' %}">About Us</a></li>
+                    <li><a href="{% url 'MySite:roadmap' %}">Our Missions</a></li>
+                    <li><a href="{% url 'MySite:project' %}">Our Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'MySite:events' %}">Events</a></li>
             <li><a href="{% url 'MySite:gallery' %}">Gallery</a></li>
             <li><a href="{% url 'MySite:contact' %}">Contact</a></li>
         </ul>
         <div class="donation">
+            <a href="JavaScript:void(0)" class="theme-btn" data-bs-toggle="modal"
+               data-bs-target="#staticBackdropReg">Register</a>
             <a href="JavaScript:void(0)" class="theme-btn" data-bs-toggle="modal"
                data-bs-target="#staticBackdrop">Give Now</a>
         </div>
@@ -149,40 +161,44 @@
     <div class="container">
         <div class="row part-one">
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="index-2.html">
-                    <img class="footer-logo" src="{% static 'mysite/assets/images/footer-logo.webp' %}"
-                         alt="footer logo">
+                <a href="JavaScript:void(0)">
+                    <img style="margin-bottom:10px" src="{% static 'mysite/assets/images/logo/zion_logo_dark-removebg.png' %}"
+                         alt="footer logo" height="150px">
                 </a>
-                <p class="text-white">901-947 South Ripple Creek Drive, Houston, TX 77057, USA</p>
-                <div class="footer-contact">
-                    <p class="text-white"><span class="theme-clr">Telephone:</span> +1 555 1234</p>
-                    <p class="text-white"><span class="theme-clr">Fax:</span> +1 555 4444</p>
+                <p class="text-white">Sheu Bus Stop, Eleyele-Ido Road, Ologuneru, Ibadan</p>
+                <div class="sidetwo">
+                    <div class="contacts my-3">
+                    <span class="icon">
+                        <svg version="1.1" id="mobile-mail" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 364.828 364.828" style="enable-background:new 0 0 364.828 364.828;"
+                             xml:space="preserve"> <g> <path
+                                d="M267.576,100.855V0H40.309v364.828h227.268V261.252h-33.705v41.141H74.014V33.695h159.857v67.16H267.576z M132.191,323.402 h43.501v16.689h-43.501V323.402z"></path> <path
+                                d="M136.334,115.643v130.48H324.52v-130.48H136.334z M304.272,210c2.717,1.568,3.65,5.029,2.086,7.746 c-1.051,1.842-2.95,2.85-4.924,2.85c-0.956,0-1.926-0.242-2.822-0.758l-56.351-32.406l-9.001,5.17 c-0.885,0.508-1.858,0.775-2.835,0.775c-0.973,0-1.955-0.268-2.831-0.775l-9.01-5.17l-56.354,32.406 c-0.888,0.516-1.856,0.758-2.818,0.758c-1.965,0-3.871-1.008-4.924-2.85c-1.568-2.717-0.623-6.178,2.095-7.746l50.619-29.117 l-50.619-29.119c-2.718-1.566-3.663-5.027-2.095-7.746c1.567-2.715,5.026-3.66,7.742-2.09l59.177,34.035 c0.001,0,0.003,0,0.004,0.002l9.015,5.182l9.009-5.182c0-0.002,0.001-0.002,0.002-0.002l59.176-34.035 c2.72-1.568,6.189-0.623,7.746,2.09c1.564,2.719,0.631,6.18-2.086,7.746l-50.628,29.119L304.272,210z"></path> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+                    </span>
+                        <ul>
+                            <li><p class="text-white"><span>+234 803 7144 298</span></p></li>
+                            <li><p class="text-white"><span>username@domain.com</span></p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <h2 class="text-white">Quick Links</h2>
                 <ul class="quick-links">
-                    <li><a href="{% url 'MySite:home' %}">Home</a></li>
-                    <li><a href="{% url 'MySite:about' %}">About</a></li>
-                    <li><a href="{% url 'MySite:roadmap' %}">Missions</a></li>
-                    <li><a href="{% url 'MySite:project' %}">Projects</a></li>
+                    <li><a href="{% url 'MySite:roadmap' %}">Our Missions</a></li>
+                    <li><a href="{% url 'MySite:project' %}">Our Projects</a></li>
+                    <li><a href="{% url 'MySite:events' %}">Events</a></li>
                     <li><a href="{% url 'MySite:gallery' %}">Gallery</a></li>
-                    <li><a href="{% url 'MySite:contact' %}">Contact</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <h2 class="text-white">Recent News</h2>
-                <ul class="footer-events">
-                    <li>
-                        <figure>
-                            <img src="{% static 'mysite/assets/images/f-event-2.webp' %}" alt="Event Image">
-                        </figure>
-                        <div>
-                            <a href="event-detail.html">Domestic Violence and Impact on Ministry</a>
-                            <p class="post-date">Thrusday, june 4, 2021</p>
-                        </div>
-                    </li>
-                </ul>
+                <h2 class="text-white">Join Us</h2>
+                <p class="text-white">
+                    Discover a place where your spiritual journey can flourish, your questions can find answers, and
+                    your heart can find solace. We invite you to be a part of our vibrant and loving community at
+                    Zion Faith Mission.
+                </p>
             </div>
         </div>
         <div class="copy-right">
@@ -241,27 +257,69 @@
             </div>
             <div class="modal-body">
                 <div class="donation-data">
-                    <h2>Stand Up the Church Climate Crisis</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed totam rem ape eaque.</p>
-                    <div class="donation-form">
-                        <div class="custom-donation-amount"><span class="text-white">$</span> <input
-                                class="donated_amount" type="number" placeholder="Custom Amount">
-                        </div>
-                        <ul class="list-unstyled aos-init aos-animate">
-                            <li><a class="donating" href="JavaScript:void(0)">$<span
-                                    class="donation_amount">5</span></a>
+                    <h2>Tithe, Offering, Venison and Donation</h2>
+                    <small>Kindly specify the transaction type in the payment details.</small>
+                    <div class="border-bottom">
+                        <ul class="quick-links mb-3">
+                            <li>
+                                <p class="theme-clr">
+                                    <b>Default Bank, Nigeria</b>
+                                </p>
+                                <b>930478373</b>
                             </li>
-                            <li><a class="donating" href="JavaScript:void(0)">$<span
-                                    class="donation_amount">10</span></a>
+                            <li>
+                                <p class="theme-clr">
+                                    <b>Default Bank, Nigeria</b>
+                                </p>
+                                <b>930478373</b>
                             </li>
-                            <li><a class="donating" href="JavaScript:void(0)">$<span
-                                    class="donation_amount">20</span></a>
-                            </li>
-                            <li><a class="donating" href="JavaScript:void(0)">$<span
-                                    class="donation_amount">30</span></a>
+                            <li>
+                                <p class="theme-clr">
+                                    <b>Default Bank, Nigeria</b>
+                                </p>
+                                <b>930478373</b>
                             </li>
                         </ul>
-                        <a class="theme-btn" href="JavaScript:void(0)">Donate Now</a>
+                    </div>
+                    <div class="text-center border-bottom my-3">
+                        <span>"...God loves a cheerful giver"</span><br>
+                        <small class="theme-clr">2 Corinthians 9:7 </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Donation Modal -->
+<div class="modal fade donation-model" id="staticBackdropReg" data-bs-backdrop="static" data-bs-keyboard="false"
+     tabindex="-1" aria-labelledby="staticBackdropRegLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropRegLabel">Register Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="donation-data">
+                    <div class="review-form">
+                        <form class="row g-3" method="post" action="">
+                            {% csrf_token %}
+                            <h3>Zion College Of Theology And Leadership Development</h3>
+                            <h4>Registration Form</h4>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" required name="last_name" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" required name="first_name" placeholder="First Name">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" required name="email" placeholder="Email Adress">
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="theme-btn">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
