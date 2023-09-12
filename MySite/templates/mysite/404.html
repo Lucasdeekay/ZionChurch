@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Page Not Found
+{% endblock title %}
+
+{% block content %}
+
+<!-- Page 404 Start -->
+<section class="gap page-404">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/error.webp' %});"></div>
+    <div class="container">
+        <div class="search-error text-center">
+            <h2 class="font-bold">4<span class="position-relative theme-dark-clr">0</span>4</h2>
+            <h3 class="font-bold">Ooops! Page Not Found</h3>
+            <p class="w-40 m-auto">Something's only missing, it could be much worse. it happens to the best of us.</p>
+            <div class="d-flex justify-content-center loadmore">
+                <a href="{% url 'MySite:home' %}" class="theme-btn">Go to Homepage</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Page 404 End -->
+
+{% endblock content %}

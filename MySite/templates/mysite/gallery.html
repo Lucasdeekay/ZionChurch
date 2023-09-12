@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Gallery
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/go/building.webp' %}); filter: brightness(0.5);"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">Gallery</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">Gallery</a></li>
+        </ul>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- Gallery Start -->
+<section class="gap events">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/image1.webp' %}" alt="Event Image 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img class="mb-2" src="{% static 'mysite/assets/images/go/img1.webp' %}" alt="Event Image 3">
+                    <img class="mt-2" src="{% static 'mysite/assets/images/go/img6.webp' %}" alt="Event Image 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/img2.webp' %}" alt="Event Image 4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/image5.webp' %}" alt="Event Image 5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/go3.webp' %}" alt="Event Image 6">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img class="mb-2" src="{% static 'mysite/assets/images/go/img3.webp' %}" alt="Event Image 3">
+                    <img class="mt-2" src="{% static 'mysite/assets/images/go/img7.webp' %}" alt="Event Image 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img class="mb-2" src="{% static 'mysite/assets/images/go/img8.webp' %}" alt="Event Image 3">
+                    <img class="mt-2" src="{% static 'mysite/assets/images/go/img9.webp' %}" alt="Event Image 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/image3.webp' %}" alt="Event Image 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/image4.webp' %}" alt="Event Image 4">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/img4.webp' %}" alt="Event Image 5">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img class="mb-2" src="{% static 'mysite/assets/images/go/img10.webp' %}" alt="Event Image 3">
+                    <img class="mt-2" src="{% static 'mysite/assets/images/go/img11.webp' %}" alt="Event Image 3">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="event">
+                    <img src="{% static 'mysite/assets/images/go/img5.webp' %}" alt="Event Image 7">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Gallery End -->
+
+{% endblock content %}

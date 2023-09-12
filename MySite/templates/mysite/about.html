@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+About Us
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/go/building.webp' %}); filter: brightness(0.5);"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">About Us</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">About Us</a></li>
+        </ul>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- Fellowship Start -->
+<section class="fellowship">
+    <div class="container">
+        <h2 class="text-center mx-auto my-5">Preach and teach Faith, Hope and Solution from the perspective of the Great
+            Commission.</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                <div class="offer text-center">
+						<span>
+							<img src="{% static 'mysite/assets/images/wedding.svg' %}" alt="Wedding">
+						</span>
+                    <h3><a href="JavaScript:void(0)">Salvation of Souls</a></h3>
+                    <p class="mx-auto">Our uttermost goal is to make Heaven. Therefore, we need to worship God and
+                        provide platform for others to worship him </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
+                <div class="offer text-center">
+						<span>
+							<img src="{% static 'mysite/assets/images/pray.svg' %}" alt="Pray">
+						</span>
+                    <h3><a href="JavaScript:void(0)">Know Him More</a></h3>
+                    <p class="mx-auto">Our desire is to know His presence and press hard towards the mark of higher
+                        calling of God in Christ Jesus.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                <div class="offer text-center">
+						<span>
+							<img src="{% static 'mysite/assets/images/bird.svg' %}" alt="Bird">
+						</span>
+                    <h3><a href="JavaScript:void(0)">Planting God's Community</a></h3>
+                    <p class="mx-auto">Our straegic plan is to plant so many community churches for people in the real
+                        communities to worship God.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fellowship End -->
+
+<!-- About Us Start -->
+<section class="gap no-bottom about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="content">
+                    <h2>The Story Of Zion Faith Mission</h2>
+                    <p class="w-85">The vision began in 1989 i Maiduguri between Brother Abel Adeleke and Sister Oluremi
+                        Alabi, as they were planning to become married couple someday in the future. As we know, a noble
+                        purpose inspires sacrifice, stimulate innovation and encourages perseverance. The vision was
+                        kept close to our hearts. We received some theoretical training, we worked with Foursquare
+                        Nigeria to gain requisite experience, we prayed as required, and we consulted many church
+                        leaders for counseling.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="church-about-img">
+                    <img src="{% static 'mysite/assets/images/church-about-img.webp' %}" alt="Church Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gap about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="church-about-img-two">
+                    <img src="{% static 'mysite/assets/images/church-about-img-two.webp' %}" alt="church-about-img-two">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="content services-online mt-5">
+                    <h2>Our Journey Here...</h2>
+                    <p class="w-85">At the fullness of time, Zion began in 2008 at Peace House. Tim Arolayo was the
+                        resident pastor then. Isaiah Akinola was the director of Home Mission and Revival. Olusegun
+                        Ogunniyi was in charge of Prayer Ministry. Florence Olujobi was the Director of Finance. Oladele
+                        Albert was the Director of Mission and Evangelism. Adeshina Afolayan became the Director of
+                        Christian Education. Oluremi Adeleke became the Provost of Zion College of Theology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- About Us End -->
+
+{% endblock content %}

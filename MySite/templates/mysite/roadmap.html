@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Ministries & Missions
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/go/building.webp' %}); filter: brightness(0.5);"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">Ministries & Missions</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">Ministries & Missions</a></li>
+        </ul>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- Pastor Detail Start -->
+<section class="pastor-detail">
+    <div class="container">
+        <div class="row">
+            <div class="pastor-content content w-85 m-auto">
+                <h3>Zion Missions</h3>
+                <ul class="check-list">
+                    <li>All encompassing worship experience featuring inspirational songs, purposeful prayers,
+                        testimonies, word ministration, altar call, Holy communion on monthly basis, dedication and
+                        thanksgiving ceremonies.
+                    </li>
+                    <li>Well structured Cristian education through a systematic Sunday School structure and purposeful
+                        bible studies.
+                    </li>
+                    <li>Effective prayer ministry through the in-dwelling oft the Holy Spirit, in order to draw strength
+                        for fruitful living.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pastor Detail End -->
+
+<!-- Church Prayers Start -->
+<section class="gap light-bg church-prayers">
+    <div class="parallax pattren" style="background-image: url({% static 'mysite/assets/images/pattren.jpg' %});"></div>
+    <div class="container">
+        <div class="heading">
+            <img src="{% static 'mysite/assets/images/heading-img.webp' %}" alt="Heading Image">
+            <h2 class="m-auto">Prayer is the master key</h2>
+        </div>
+        <div class="row slider-church-prayers">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="quotes">
+                    <img src="{% static 'mysite/assets/images/go/go7.webp' %}" alt="quotes">
+                    <div>
+                        <p class="font-bold">“Our prayer to God is to make us significant instruments in his hand.”</p>
+                        <h4 class="font-bold">Amen</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="quotes">
+                    <img src="{% static 'mysite/assets/images/go/go8.webp' %}" alt="quotes">
+                    <div>
+                        <p class="font-bold">“The cry of our spirits is to be like Jesus in life and ministry.”</p>
+                        <h4 class="font-bold">Amen</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Church Prayers End -->
+
+<!-- Pastor Detail Start -->
+<section class="gap pastor-detail">
+    <div class="container">
+        <div class="row">
+            <div>
+                <div class="pastor-meta light-bg">
+                    <img class="w-100 img-fluid" src="{% static 'mysite/assets/images/go/congregation2.webp' %}"
+                         alt="Pastor Featured Image">
+                    <div>
+                        <img class="pastor-img" src="{% static 'mysite/assets/images/go/go3.webp' %}" alt="Pastor" width="300px">
+                    </div>
+                </div>
+            </div>
+            <div class="pastor-content content w-85 m-auto">
+                <h3>Home Cell Fellowship</h3>
+                <p>Home Cell Fellowship Groups are te fabric of the church and the most important aspect of te home cell
+                    groups is the Spiritual Dynamism. People should be taught the cells are avenues for worship, learn,
+                    relate, win souls and experience the miraculous powers of God</p>
+                <p>The goal is to help people to personally encounter the supernatural God. HCF should be a place whee
+                    miracles occur on regular basis and people's problems are solved from the divine perspective. Cell
+                    meetings in Zion should spend less time in fellowship and more in evangelism. Cell lay-ministers
+                    should be active homemakers, searching for and helping people with problems, especially in that
+                    neighborhood. Cells in Zion may find it important to rotate the location of cell meetings in the
+                    participating homes. Wen Christians worship in a home, such home is blessed by God; therefore, it
+                    should be regarded a privilege to host a cell fellowship.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pastor Detail End -->
+
+<!-- Pray Start -->
+<section class="gap pray">
+    <div class="parallax" style="background-image: url({% static 'mysite/assets/images/pray.webp' %});"></div>
+    <div class="container">
+        <div class="row">
+            <div class="pray-data text-center">
+                <img src="{% static 'mysite/assets/images/pray-logo.webp' %}" alt="Pray Img">
+                <p class="m-auto text-white">“God, you have taught from my youth. Until now, I have declared your
+                    wondrous works. Yes, even when I am old and grey-haired, God, don't forsake me, until I have
+                    declared your strength to the next generation, your might to everyone who is to come. Your
+                    righteousness also, God, reaches to th heavens; you have done great things. God, who is like
+                    you?”</p>
+                <p class="text-white font-bold">Psalm 71:17-19</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pray End -->
+
+<!-- Blog Start -->
+<section class="gap blog">
+    <div class="container">
+        <div class="heading">
+            <h2>Zion Ministries</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/revival/crusade9.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Mission, Rural Evangelism and Church</a>
+                    <p>Planting to fulfill the great commission. Every arm of te church and the leaders in those arms
+                        must be actively involved in this. Every program must be consequential to soul winning and
+                        disciplining of the converts</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/ministers1.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Zion College of Ministries and Leadership
+                        Development</a>
+                    <p>To raise dynamic church leaders for the end time harvest of soul into the kingdom of God. In the
+                        next one decade, I hope to have inspired a thousand individual into a more active anticipation
+                        in the work of the ministry.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/congregation2.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Zion Home Cell Fellowship</a>
+                    <p>As part of the church outlet program for evangelism in the close environment of the existence of
+                        the Home Cells; caring for every member and family represented in the Home Cells; and teaching
+                        faith as well as bringing hope and solution t the participating members.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/adult2.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Christian Adult Ministry and Leadership
+                        Development</a>
+                    <p>Through effective men and women's fellowship, towards leadership development, sense of purpose,
+                        empowerment, family life affairs, medicare</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/children1.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Dynamic Children Ministry</a>
+                    <p>Through camping, children club centers, mind and intellectual capacity development of the
+                        children towards making them career focused, dynamic children of the living God, visionary
+                        individual and family men and women, who would be exemplary all over.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/youth1.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Dynamic Youth Ministries and Empowerment</a>
+                    <p>Getting exposed to Christian leadership skills and conduct, career inclination, settled home
+                        front, Great Commission, great virtue and prize of ingenious lifestyle with the fear of God</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-meta aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"
+                     data-aos-duration="600">
+                    <figure>
+                        <img class="img-fluid" src="{% static 'mysite/assets/images/go/choir3.webp' %}"
+                             alt="Blog image 1">
+                    </figure>
+                    <a href="JavaScript:void(0)" class="font-bold">Music Ministry</a>
+                    <p>Development of creative talents, towards producing world-class worship leader, gospel maestro,
+                        songwriters, dynamic instrumentalists and very disciplined worship team tagged The Praise
+                        Bells.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog End -->
+
+{% endblock content %}

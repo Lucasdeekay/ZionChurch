@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block content %}
+
+<!-- Banner Start -->
+<section class="banner position-relative">
+    <div class="parallax"
+         style="background-image: url({% static 'mysite/assets/images/go/building.webp' %}); filter: brightness(0.5);"></div>
+    <div class="banner-data text-center">
+        <h2 class="text-white font-bold">Contact Us</h2>
+        <ul class="flex-all">
+            <li><a href="{% url 'MySite:home' %}" class="text-white">Home</a></li>
+            <li><a href="JavaScript:void(0)" class="text-white">Contact Us</a></li>
+        </ul>
+    </div>
+</section>
+<!-- Banner End -->
+
+<!-- Contact Us Start -->
+<section class="gap about-three">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12">
+                <div class="sideone">
+                    <h2>If you have any questions, feel free to contact us.</h2>
+                    <h6>Kindly click the phone number or email to reach out to us</h6>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="sidetwo">
+                    <div class="contacts">
+							<span class="icon">
+								<svg version="1.1" id="cclsdffsdfsdfock" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 559.98 559.98" style="enable-background:new 0 0 559.98 559.98;"
+                                     xml:space="preserve"> <g> <g> <path
+                                        d="M279.99,0C125.601,0,0,125.601,0,279.99c0,154.39,125.601,279.99,279.99,279.99c154.39,0,279.99-125.601,279.99-279.99 C559.98,125.601,434.38,0,279.99,0z M279.99,498.78c-120.644,0-218.79-98.146-218.79-218.79 c0-120.638,98.146-218.79,218.79-218.79s218.79,98.152,218.79,218.79C498.78,400.634,400.634,498.78,279.99,498.78z"></path> <path
+                                        d="M304.226,280.326V162.976c0-13.103-10.618-23.721-23.716-23.721c-13.102,0-23.721,10.618-23.721,23.721v124.928 c0,0.373,0.092,0.723,0.11,1.096c-0.312,6.45,1.91,12.999,6.836,17.926l88.343,88.336c9.266,9.266,24.284,9.266,33.543,0 c9.26-9.266,9.266-24.284,0-33.544L304.226,280.326z"></path> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+							</span>
+                        <ul>
+                            <li><p>We worship together!</p></li>
+                            <li><p class="theme-clr">Every Sunday @ 8:00am at our Church Auditorium.</p></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+							<span class="icon">
+								<svg version="1.1" id="mobile-mail" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 364.828 364.828" style="enable-background:new 0 0 364.828 364.828;"
+                                     xml:space="preserve"> <g> <path
+                                        d="M267.576,100.855V0H40.309v364.828h227.268V261.252h-33.705v41.141H74.014V33.695h159.857v67.16H267.576z M132.191,323.402 h43.501v16.689h-43.501V323.402z"></path> <path
+                                        d="M136.334,115.643v130.48H324.52v-130.48H136.334z M304.272,210c2.717,1.568,3.65,5.029,2.086,7.746 c-1.051,1.842-2.95,2.85-4.924,2.85c-0.956,0-1.926-0.242-2.822-0.758l-56.351-32.406l-9.001,5.17 c-0.885,0.508-1.858,0.775-2.835,0.775c-0.973,0-1.955-0.268-2.831-0.775l-9.01-5.17l-56.354,32.406 c-0.888,0.516-1.856,0.758-2.818,0.758c-1.965,0-3.871-1.008-4.924-2.85c-1.568-2.717-0.623-6.178,2.095-7.746l50.619-29.117 l-50.619-29.119c-2.718-1.566-3.663-5.027-2.095-7.746c1.567-2.715,5.026-3.66,7.742-2.09l59.177,34.035 c0.001,0,0.003,0,0.004,0.002l9.015,5.182l9.009-5.182c0-0.002,0.001-0.002,0.002-0.002l59.176-34.035 c2.72-1.568,6.189-0.623,7.746,2.09c1.564,2.719,0.631,6.18-2.086,7.746l-50.628,29.119L304.272,210z"></path> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+							</span>
+                        <ul>
+                            <li><p><a class="theme-clr" href="tel:+2348037144298">+234 803 7144 298</a></p></li>
+                            <li><p><a class="theme-clr" href="mailto:myzionfaithmission@gmail.com">myzionfaithmission@gmail.com</a></p></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+							<span class="icon">
+								<svg version="1.1" id="location-pin" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                     style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path
+                                        d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035 c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719 c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"></path> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+							</span>
+                        <ul>
+                            <li><p>Sheu Bus Stop, Eleyele-Ido Road, Ologuneru, Ibadan</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Us End -->
+
+{% endblock content %}
